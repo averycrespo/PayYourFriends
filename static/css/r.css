@@ -1,0 +1,229 @@
+.page-background{
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh; 
+}
+  
+.top-right {
+    padding-left: 20px;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    border: 1px black solid;
+}
+
+.top-right-h {
+    color: Black;
+    font-size: 24px;
+}
+
+.top-left-h {
+    color: Black;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+  
+.top-left {
+    padding-right: 20px;
+    padding-left: 10px;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+}
+  
+.bottom {
+    grid-column: span 2; 
+    grid-row: 2;
+    background-color: #ddd;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.bottom-wrapper{
+    width: 400px; 
+    padding: 20px;
+}
+
+.bottom-h {
+    margin-top: 20px;
+    color: Black;
+    font-size: 24px;
+}
+
+.names-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.valid-image-box {
+    border: 2px black solid;
+    margin-bottom: 1px;
+    width: 200;
+    height: 207px;
+}
+
+.image-input {
+    display: flex;
+    flex-direction: row;
+}
+
+#preview {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.image-path {
+    border: 2px black solid;
+    width: 385px;
+    white-space: nowrap;
+    margin-right: 2px;
+    flex-grow: 1;
+}
+
+.browse-box {
+    padding-left: 8px;
+    justify-self: center;
+    width: 65px;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+} 
+.browse-box:hover {
+    cursor: pointer
+}
+
+.names-box label {
+    margin-top: 20px;
+}
+
+.names-box input[type="text"] {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.last-label {
+    margin-right: 82px;
+}
+.last-label-2 {
+    margin-right: 56px;
+}
+
+.message-box {
+    overflow-y: scroll;
+    border: 2px solid black;
+    height: 100px;
+    resize: none;
+    background-color: white;
+    
+}
+
+.message-box::-webkit-scrollbar {
+    width: 10px;
+    padding-right: 5px;
+}
+
+.message-box::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px; 
+}
+
+.nt-r {
+    padding-top: 10px;
+}
+
+.three-circles-container {
+    list-style: none;
+}
+.three-circles-container label {
+    padding-right: 30px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.tbox {
+    margin: 10px
+}
+
+.send-button {
+    background-color: #61eb61;
+    border: black 1px solid;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 275px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color .2 ease;
+}
+
+.send-button:hover {
+    background-color: #abf5ab;
+}
+
+.card-num-label{
+    margin-left: 91px;
+}
+
+.secondb {
+    padding-left: 32px
+}
+
+.thirdb {
+    padding-left: 31px;
+}
+
+.firstinput {
+    width: 85px;
+}
+
+.secondinput {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.thirdinput {
+    width: 75px;
+}
+
+.card-info-container {
+    display: inline-block;
+}
+
+.card-num-spacing {
+    margin-left: 30px;
+    width: 100px;
+}
+
+.ntfy-spacing {
+    margin-left: 35px;
+}

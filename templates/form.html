@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/r.css"/> -->
+    <link rel="stylesheet" type="text/css" href="/css/r.css"/>
+
+
+
+
+    <title>Document</title>
+</head>
+
+
+<body class="page-background"> 
+
+<h1> Pay Your Friends </h1>
+
+
+<div class="container">
+    <div class="top-left">
+        <div class="top-left-h"> Sender Details</div>
+        <form id="myForm" action="/submit" method="post" enctype="multipart/form-data">
+        <div class="valid-image-box">
+            <img id="preview" alt="Preview Image">
+        </div>
+        <!-- <form id="myForm" action="/submit" method="post"> -->
+        <div class="image-input">
+
+            <input  type="file" id="file-input" accept="image/*" onchange="previewImage(event)" required> 
+        </div>
+
+        <div class="names-box"> 
+            <label for="first-name-s">First Name:</label>
+            <label class="last-label" for="last-name-s">Last Name:</label>
+            
+        </div>
+
+        
+        <div class="names-box"> 
+            
+            <input type="text" id="first-name-s" name="first-name-s" required>
+            <input type="text" id="last-name-s" name="last-name-s" required>
+
+        </div>
+
+
+    </div>
+
+    <div class="top-right">
+        <div class="top-right-h"> Recipient Details</div>
+
+        <div class="names-box"> 
+
+            <label for="first-name-r">First Name:</label>
+            <label class="last-label" for="last-name-r">Last Name:</label>
+            
+        </div>
+
+        <div class="names-box"> 
+            
+            <input type="text" id="first-name-r" name="first-name-r" required>
+            <input type="text" id="last-name-r" name="last-name-r" required>
+
+        </div>
+
+        <label for="message_input"> Message </label>
+        <textarea id="message_input" class="message-box"></textarea>
+
+        <span class="nt-r">Notify Recipient:</span>
+
+        <div class="three-circles-container"> 
+
+            <input id="b1" type="radio"  name="options" value="b1" required>
+                <span > Email</span>
+
+            <input class="ntfy-spacing " type="radio" id="b2" name="options" value="b2" required>
+                <span >SMS</span>
+
+            <input  class="ntfy-spacing " type="radio" id="b3" name="options" value="b3" required>
+                <span"> Do not notify </span>
+
+        </div>
+
+        <div class="names-box"> 
+
+            <span>Email:</span>
+            <span class="last-label-2">Phone Number:</span>
+            
+        </div>
+
+        <div class="names-box"> 
+            <input type="text" id="email-r" name="email-r">
+            <input type="text" id="phonenumber-r" name="phonenumber-r">
+        </div>
+
+    </div>
+        
+    <div class="bottom">
+        <div class="bottom-wrapper">
+            <div class="bottom-h"> Payment Details</div>
+        
+            <div> 
+                <label for="card">Card Type: </label>
+                <span class="card-num-label" >Card Number: </span>
+            </div>
+
+            <!--  card type & number -->
+            <div class="card-info-container"> 
+                <select id="card-type" name="card" required>
+                    <option value="Visa"> Visa </option>
+                    <option value="Master Card"> Mastercard </option>
+                    <option value="Discovery"> Discovery </option>
+                    <option value="American Express"> American Express </option>
+              </select>
+
+            <input class="card-num-spacing" type="text" id="card" name="cardnum" maxlength="19" required>
+        </div>
+            
+            <div class="card-info-container"> 
+                <div> 
+                    <label for="expiration" >Expiration:</label>
+                    <label for="ccv" class="secondb">CCV:</label>
+                    <label class="thirdb" for="amountInput">Amount($): </label>
+                </div>
+            </div>
+
+            <div class="card-info-container"> 
+                <input class="firstinput" type="text" id="expiration" name="date" placeholder="MM/DD/YYYY" required>
+                <input class="secondinput" type="text" id="ccv" name="ccv" maxlength="4" required>
+                <input class="thirdinput" type="number" id="amountInput" name="amountInput" required>
+            </div>
+
+            <div>
+                <input type="checkbox" class="tbox" type="checkbox" id="checkbox" name="checkbox" required>
+                <span> I agree to the Terms and Conditions</span>
+            </div>
+            <button type="submit" class="send-button">Send</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+
+
+<!-- <script src="./js/scripts.js"></script> -->
+<!-- <script src="../static/js/scripts.js"></script> -->
+<script src="/js/scripts.js"></script>
+
+</body>
+</html>
